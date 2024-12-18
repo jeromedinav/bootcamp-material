@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-principal: rgb(85, 148, 236);
+  --espaciado: 1rem;
+
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: var(--color-principal);
+  padding: calc(var(--espaciado) * 2);
+  color: white;
+  text-align: center;
+}
+
+section {
+  margin: calc(var(--espaciado) * 2);
+}
+
+h2 {
+  color: var(--color-principal);
+  margin-bottom: var(--espaciado);
+}
+
+li {
+  list-style: circle inside;
+  margin: var(--espaciado);
+}
+
+li.destacado {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table {
+  margin: var(--espaciado);
+}
+
+thead {
+  background-color: var(--color-principal);
+  color: white;
+}
+
+td,
+th {
+  padding: var(--espaciado);
+}
+
+tbody {
+  background-color: rgb(158, 192, 241);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(222, 236, 255);
+}
+
+tbody th {
+  background-color: rgba(85, 148, 236, 0.459);
+}
+
+#descanso {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}

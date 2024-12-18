@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debrable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Debrale</h1>
+      <nav>
+        <menu>
+          <li><a href="#top-peliculas">Mi TOP 10 películas</a></li>
+          <li><a href="#viaje">Mi viaje a Japón</a></li>
+          <li><a href="#contacto">Mándame un mensaje</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- <h2>Entradas</h2> -->
+        <article id="top-peliculas">
+          <h2>Mi top 10 películas</h2>
+          <ol>
+            <!-- li{Película $}*10 -->
+            <li>Película 1</li>
+            <li>Película 2</li>
+            <li>Película 3</li>
+            <li>Película 4</li>
+            <li>Película 5</li>
+            <li>Película 6</li>
+            <li>Película 7</li>
+            <li>Película 8</li>
+            <li>Película 9</li>
+            <li>Película 10</li>
+          </ol>
+        </article>
+        <article id="viaje">
+          <h2>Mi viaje a Japón</h2>
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661964177687-57387c2cbd14?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW58ZW58MHx8MHx8fDA%3D"
+            alt="Cerezo con el monte Fuji de fondo"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+            ratione modi velit ipsum sapiente incidunt rerum, atque vitae
+            adipisci a! Libero inventore voluptates tenetur, rerum, laborum
+            dolorem id quis ullam debitis, quo voluptate est temporibus saepe
+            odit expedita doloribus! Laborum aut non nihil, at ea molestiae modi
+            praesentium esse libero.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+            adipisci veniam soluta tempore nemo unde delectus ex nostrum eos
+            assumenda?
+          </p>
+        </article>
+      </section>
+      <aside>
+        <img
+          src="https://images.unsplash.com/file-1722962862010-20b14c5a0a60image?w=416&dpr=2&auto=format&fit=crop&q=60"
+          alt="Debra Smith"
+        />
+
+        <h2>Debra Smith</h2>
+        <p>Aquí escribo todo lo que se me ocurre</p>
+        <p>
+          <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+        </p>
+      </aside>
+      <section id="contacto">
+        <!-- también podemos considerarlo el footer del main -->
+        <h2>Mándame un mensaje</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="nombre">Nombre:</label>
+              <input type="text" required name="nombre" id="nombre" />
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </li>
+            <li>
+              <label for="dob">Fecha de nacimiento:</label>
+              <input type="date" id="dob" name="dob" required />
+            </li>
+            <li>
+              <label for="coment">Comentarios:</label>
+              <textarea
+                name="coment"
+                id="coment"
+                placeholder="Escribe aquí lo que quieras"
+              ></textarea>
+            </li>
+            <li>
+              <input type="checkbox" id="news" name="news" />
+              <label for="news">Suscribirse a newsletter</label>
+            </li>
+          </ul>
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="/tyc">Términos y condiciones</a>
+      <a href="/privacidad">Política de privacidad</a>
+    </footer>
+  </body>
+</html>
