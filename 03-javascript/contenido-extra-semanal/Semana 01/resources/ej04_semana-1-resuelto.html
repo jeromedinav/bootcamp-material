@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Registro al Evento de Desarrollo Web</title>
+    <!-- Ignorar CSS, solo para separar los campos - No modificar -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      label,
+      legend {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+
+      fieldset,
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem 0;
+      }
+
+      div > input {
+        width: 20px;
+      }
+
+      input,
+      button {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registro al Evento de Desarrollo Web</h1>
+    <form>
+
+      <!-- input para el nombre: name="nombre", requerido -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <!-- input para email: name="email", requerido -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- input para la URL de la página web del inscrito: name="website", debe ser una web válida-->
+      <label for="website">Página Web:</label>
+      <input type="url" id="website" name="website" />
+
+      <!-- input para el número de teléfono: name="phone", debe mostrar el teclado numérico en dispositivos móviles -->
+      <label for="phone">Número de teléfono:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <!-- input número para cantidad de tickets: name="tickets", los valores admintidos deben estar entre mínimo 1 y máximo 5, requerido -->
+      <label for="tickets">Cantidad de Tickets (1-5):</label>
+      <input
+        type="number"
+        id="tickets"
+        name="tickets"
+        min="1"
+        max="5"
+        required
+      />
+
+      <!-- input de hora para la hora de llegada: name="time", requerido -->
+      <label for="time">Hora de Llegada:</label>
+      <input type="time" id="time" name="time" required />
+
+      <!-- input oculto para enviar un valor específico: name="registry", value="event_registry" -->
+      <input type="hidden" name="registry" value="event_registry" />
+
+      <!-- input para la contraseña del usuario: name="password", requerida -->
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required />
+
+      <!-- Checkbox para optar por recibir actualizaciones por correo electrónico: name="updates", por defecto activada -->
+      <div>
+        <label for="updates"
+          >Recibir actualizaciones por correo electrónico:</label>
+        <input type="checkbox" id="updates" name="updates" checked />
+      </div>
+
+      <!-- Botones de opción (radio) para seleccionar el color de la camiseta: name="t-shirt", colores disponibles (blue, black, orange) -->
+      <fieldset>
+        <legend>Color de la Camiseta:</legend>
+        <label for="blue"> Azul </label>
+        <input type="radio" id="blue" name="t-shirt" value="blue" />
+        <label for="black"> Negro </label>
+        <input type="radio" id="black" name="t-shirt" value="black" />
+        <label for="orange"> Naranja </label>
+        <input type="radio" id="orange" name="t-shirt" value="orange" />
+      </fieldset>
+
+      <!-- Campo de archivo para cargar la foto de perfil: name="photo" -->
+      <label for="photo">Foto de Perfil:</label>
+      <input type="file" id="photo" name="photo" />
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Registrarse</button>
+
+    </form>
+  </body>
+</html>
