@@ -80,3 +80,41 @@ do {
   num2 = Math.floor(Math.random() * 100);
   console.log(num2);
 } while (num2 < 10);
+
+//////////////
+
+//
+// BREAK
+// Fuerza el fin del bucle
+
+console.log("");
+console.log("BREAK");
+for (let i = 0; i < string.length; i++) {
+  let letra = string[i];
+  if (letra === "o") {
+    break;
+  }
+  console.log(letra);
+}
+
+//
+// CONTINUE
+// Salta a la siguiente vuelta
+console.log("CONTINUE");
+for (let i = 0; i < string.length; i++) {
+  let letra = string[i];
+  if (letra === "o") {
+    continue;
+  }
+  console.log(letra);
+}
+
+for (let i = 0; i < 20; i += 2) {
+  console.log(i);
+
+  if (i % 3 !== 0) {
+    continue;
+  }
+
+  console.log("Es múltiplo de 3");
+}
